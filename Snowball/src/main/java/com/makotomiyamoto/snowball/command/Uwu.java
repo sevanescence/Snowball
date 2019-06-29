@@ -21,11 +21,7 @@ public final class Uwu implements CommandExecutor {
     @SuppressWarnings("all")
     public void cast(String label, String[] args, MessageReceivedEvent event) {
 
-        if (!this.label.equals(label)) {
-            return;
-        }
-
-        if (!event.getMember().hasPermission(permission)) {
+        if (!this.label.equals(label) || !event.getMember().hasPermission(permission)) {
             return;
         }
 
