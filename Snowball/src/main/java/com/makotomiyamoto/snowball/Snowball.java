@@ -36,6 +36,7 @@ public final class Snowball {
         commands.add(new Uwu("uwu", 1, Permission.MESSAGE_READ));
         commands.add(new Help("help"));
         commands.add(new MyStats("mystats"));
+        commands.add(new UserStats("userstats", 1, Permission.MANAGE_SERVER));
 
         System.out.println("Commands initialised! >:3");
 
