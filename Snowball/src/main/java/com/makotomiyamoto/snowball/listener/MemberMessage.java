@@ -29,6 +29,8 @@ public final class MemberMessage extends ListenerAdapter {
             memberUser.tryLevelUp();
             MemberUserManager.setMemberUser(dir, memberUser);
 
+            MemberUserManager.checkRoles(memberUser, event);
+
             return;
 
         }
