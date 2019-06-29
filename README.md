@@ -1,6 +1,10 @@
 # Snowball
 Cats are Cute Discord admin bot :3
 
+```css
+NOTE: Parameter argCount is deprecated in UserStats and will be removed in 1.3.
+```
+
 #### Changelog
 ###### Version 1.1
 ```
