@@ -10,7 +10,7 @@ public final class CommandListener extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
 
-        if (!event.getMessage().getContentRaw().startsWith(">")) {
+        if (!event.getMessage().getContentRaw().startsWith("!")) {
             return;
         }
 
