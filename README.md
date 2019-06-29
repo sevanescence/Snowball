@@ -3,8 +3,10 @@ Cats are Cute Discord admin bot :3
 
 ##### Changelog
 ###### Version 1.1
-```Command prompt key changed from '>' to '!'```
-```MyStats command added - returns user data.```
+```
+Command prompt key changed from '>' to '!'
+MyStats command added - returns user data.
+```
 ##### Commands
 ```
 !help - return list of commands.
