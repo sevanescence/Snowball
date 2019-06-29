@@ -4,8 +4,11 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.makotomiyamoto.snowball.object.MemberUser;
 import com.makotomiyamoto.snowball.object.MemberUserList;
+import net.dv8tion.jda.api.entities.Role;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 
 import java.io.*;
+import java.util.List;
 
 public class MemberUserManager {
 
@@ -91,6 +94,34 @@ public class MemberUserManager {
         }
 
         return false;
+
+    }
+
+    @SuppressWarnings("all")
+    public static void checkRoles(MemberUser memberUser, MessageReceivedEvent event) {
+
+        List<Role> roles = event.getJDA().getRoles();
+
+        for (Role role : roles) {
+            if (memberUser.getLevel() >= 5 && role.getName().equalsIgnoreCase("Kitty")) {
+                event.getGuild().addRoleToMember(event.getMember(), role).complete();
+            }
+            if (memberUser.getLevel() >= 10 && role.getName().equalsIgnoreCase("Cat")) {
+                event.getGuild().addRoleToMember(event.getMember(), role).complete();
+            }
+            if (memberUser.getLevel() >= 15 && role.getName().equalsIgnoreCase("Kitty Cat")) {
+                event.getGuild().addRoleToMember(event.getMember(), role).complete();
+            }
+            if (memberUser.getLevel() >= 20 && role.getName().equalsIgnoreCase("Nyaa")) {
+                event.getGuild().addRoleToMember(event.getMember(), role).complete();
+            }
+            if (memberUser.getLevel() >= 25 && role.getName().equalsIgnoreCase("Neko")) {
+                event.getGuild().addRoleToMember(event.getMember(), role).complete();
+            }
+            if (memberUser.getLevel() >= 30 && role.getName().equalsIgnoreCase("Nyanko")) {
+                event.getGuild().addRoleToMember(event.getMember(), role).complete();
+            }
+        }
 
     }
 
