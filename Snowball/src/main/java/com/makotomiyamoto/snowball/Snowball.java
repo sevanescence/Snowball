@@ -1,11 +1,11 @@
 package com.makotomiyamoto.snowball;
 
-import com.makotomiyamoto.snowball.command.Help;
+import com.makotomiyamoto.snowball.command.*;
 import com.makotomiyamoto.snowball.interfaces.CommandExecutor;
 import com.makotomiyamoto.snowball.listener.*;
-import com.makotomiyamoto.snowball.command.Uwu;
 import com.makotomiyamoto.snowball.manager.FileManager;
 import com.makotomiyamoto.snowball.object.Command;
+
 import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -35,6 +35,7 @@ public final class Snowball {
 
         commands.add(new Uwu("uwu", 1, Permission.MESSAGE_READ));
         commands.add(new Help("help"));
+        commands.add(new MyStats("mystats"));
 
         System.out.println("Commands initialised! >:3");
 
