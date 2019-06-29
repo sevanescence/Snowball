@@ -1,0 +1,16 @@
+This is not meant to be 100% customisable.
+
+DefaultRole>Kitten
+
+BannedWords> Fag Nig Whore Cunt Retard
+
+MemberJoinMessage>Welcome %user% to the Cats are Cute Discord! Be sure to read #rules, and enjoy your stay!
+
+MemberLeaveMessage>%user% has departed. ):
+
+LevelUpMessage>Congratulations, %user%! You have reached level %level%! :D
+
+Command Messages
+uwuNope>only if you say `pls` 3:
+uwuOkay>uwu
+helpOkay>Commands (type \\\\> to escape command char):\n> Help - this page\n> uwu <arg> - uwu 3:

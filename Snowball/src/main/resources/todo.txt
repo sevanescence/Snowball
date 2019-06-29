@@ -1,0 +1,14 @@
+write UserDataManager and check for existing user data on MemberJoin
+
+write data checker such that an updated MemberUser format can overwrite an older one
+
+fix shitty chat filter
+
+commands >:3
+- write joinArgumentsToIndex() method
+
+make sure getKey checks only if the string BEGINS with key and that key ends with >
+- also empty keys should return None
+
+
+check for <new_line> in config messages

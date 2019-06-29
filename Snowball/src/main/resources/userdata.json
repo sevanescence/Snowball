@@ -1,0 +1,24 @@
+{
+  "memberUsers": [
+    {
+      "memberUuid": "Snowball",
+      "messages": 1,
+      "level": 60
+    },
+    {
+      "memberUuid": "Kitten",
+      "messages": 1,
+      "level": 60
+    },
+    {
+      "memberUuid": "410666964458012673",
+      "messages": 23,
+      "level": 1
+    },
+    {
+      "memberUuid": "394906876250423306",
+      "messages": 1,
+      "level": 1
+    }
+  ]
+}
