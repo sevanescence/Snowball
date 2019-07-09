@@ -14,7 +14,7 @@ public final class CommandListener extends ListenerAdapter {
             return;
         }
 
-        String[] msg = event.getMessage().getContentRaw().replaceAll(">", "").trim().split(" ");
+        String[] msg = event.getMessage().getContentRaw().replaceAll("!", "").trim().split(" ");
         String[] newMsg = new String[msg.length - 1];
         System.arraycopy(msg, 1, newMsg, 0, newMsg.length);
 
